@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <main class="container">
+      <article class="profile-card" data-testid="test-profile-card">
+        <!-- Header Section -->
+        <header class="profile-header">
+          <figure class="avatar-container">
+            <img
+              src="Images/timi.jpg"
+              alt="Profile photo of Oluwasuyi Oluwatimilehin"
+              class="avatar"
+              data-testid="test-user-avatar"
+            />
+            <figcaption class="visually-hidden">Profile picture</figcaption>
+          </figure>
+
+          <div class="profile-info">
+            <h2 class="user-name" data-testid="test-user-name">Oluwasuyi Oluwatimilehin</h2>
+            <p class="user-bio" data-testid="test-user-bio">
+              Frontend developer passionate about creating accessible and
+              responsive web experiences. Love working with modern JavaScript
+              and CSS.
+            </p>
+
+            <div class="time-display" data-testid="test-user-time"></div>
+          </div>
+        </header>
+
+        <!-- Social Links -->
+        <nav aria-label="Social media links">
+          <ul class="social-links" data-testid="test-user-social-links">
+            <li>
+              <a
+                href="https://github.com/Oluwasuyi-Timilehin"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+                data-testid="test-user-social-github"
+              >
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://x.com/timiturn3r"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+                data-testid="test-user-social-twitter"
+              >
+                Twitter
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/oluwasuyi-oluwatimilehin"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+                data-testid="test-user-social-linkedin"
+              >
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Hobbies Section -->
+        <section class="interests-section" aria-labelledby="hobbies-heading">
+          <h3 id="hobbies-heading" class="section-heading">Hobbies</h3>
+          <ul class="interests-list" data-testid="test-user-hobbies">
+            <li>Photography</li>
+            <li>Swimming</li>
+            <li>Reading tech blogs</li>
+            <li>Playing guitar</li>
+            <li>Playing football</li>
+          </ul>
+        </section>
+
+        <!-- Dislikes Section -->
+        <section class="interests-section" aria-labelledby="dislikes-heading">
+          <h3 id="dislikes-heading" class="section-heading">Dislikes</h3>
+          <ul class="interests-list" data-testid="test-user-dislikes">
+            <li>Slow internet connections</li>
+            <li>Inaccessible websites</li>
+            <li>Browser compatibility issues</li>
+            <li>Overcomplicated code</li>
+          </ul>
+        </section>
+      </article>
+    </main>
+
+    <script src="Scripts/main.js"></script>
+  </body>
+</html>

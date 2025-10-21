@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Profile</title>
+    <link rel="stylesheet" href="Styles/main.css" />
+    <link rel="stylesheet" href="Styles/contact.css" />
+  </head>
+  <body>
+    <main class="container">
+      <article class="contact-page" data-testid="test-contact-page">
+        <header class="page-header">
+          <h1>Contact Us</h1>
+          <p>Get in touch with us. We'd love to hear from you!</p>
+        </header>
+
+        <section class="contact-form-section">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Full Name *</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                data-testid="test-contact-name"
+                aria-describedby="name-error"
+                aria-required="true"
+                required
+              />
+              <span
+                id="name-error"
+                class="error-message"
+                data-testid="test-contact-error-name"
+                role="alert"
+                aria-live="polite"
+              ></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                data-testid="test-contact-email"
+                aria-describedby="email-error"
+                aria-required="true"
+                required
+              />
+              <span
+                id="email-error"
+                class="error-message"
+                data-testid="test-contact-error-email"
+                role="alert"
+                aria-live="polite"
+              ></span>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject *</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                data-testid="test-contact-subject"
+                aria-describedby="subject-error"
+                aria-required="true"
+                required
+              />
+              <span
+                id="subject-error"
+                class="error-message"
+                data-testid="test-contact-error-subject"
+                role="alert"
+                aria-live="polite"
+              ></span>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                data-testid="test-contact-message"
+                aria-describedby="message-error"
+                aria-required="true"
+                required
+              ></textarea>
+              <span
+                id="message-error"
+                class="error-message"
+                data-testid="test-contact-error-message"
+                role="alert"
+                aria-live="polite"
+              ></span>
+            </div>
+
+            <button
+              type="submit"
+              class="submit-btn"
+              data-testid="test-contact-submit"
+            >
+              Send Message
+            </button>
+          </form>
+
+          <div
+            class="success-message hidden"
+            id="successMessage"
+            data-testid="test-contact-success"
+            role="alert"
+            aria-live="polite"
+          >
+            <h3>Thank You!</h3>
+            <p>
+              Your message has been sent successfully. We'll get back to you
+              soon.
+            </p>
+          </div>
+        </section>
+
+        <nav class="page-navigation">
+          <a href="index.html" class="nav-link">← Back to Profile</a>
+          <a href="about.html" class="nav-link">About Me →</a>
+        </nav>
+      </article>
+    </main>
+
+    <script src="Scripts/contact.js"></script>
+  </body>
+</html>

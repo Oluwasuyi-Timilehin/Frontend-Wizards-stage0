@@ -1,0 +1,151 @@
+.about-page {
+  background: var(--background);
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-shadow);
+  padding: var(--spacing-lg);
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.page-header h1 {
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-xs);
+  font-size: 2rem;
+}
+
+.page-header p {
+  color: var(--text-light);
+  font-size: 1.1rem;
+}
+
+.about-page section {
+  margin-bottom: var(--spacing-lg);
+  padding: var(--spacing-md);
+  background: white;
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--primary-color);
+}
+
+.about-page h2 {
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-sm);
+  font-size: 1.5rem;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: var(--spacing-xs);
+}
+
+.about-page h3 {
+  color: var(--text-color);
+  margin: var(--spacing-md) 0 var(--spacing-sm) 0;
+  font-size: 1.25rem;
+}
+
+.about-page p {
+  line-height: 1.6;
+  margin-bottom: var(--spacing-sm);
+  color: var(--text-color);
+}
+
+.about-page ul {
+  margin-left: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.about-page li {
+  line-height: 1.6;
+  margin-bottom: var(--spacing-xs);
+  color: var(--text-color);
+}
+
+.about-page strong {
+  color: var(--primary-color);
+}
+
+.about-page blockquote {
+  border-left: 4px solid var(--primary-color);
+  padding-left: var(--spacing-md);
+  margin: var(--spacing-md) 0;
+  font-style: italic;
+  color: var(--text-light);
+  line-height: 1.7;
+  background: #f8fafc;
+  padding: var(--spacing-md);
+  border-radius: 0 6px 6px 0;
+}
+
+.content {
+  max-width: 100%;
+}
+
+.page-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--spacing-lg);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid #e5e7eb;
+}
+
+.nav-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  background: #f3f4f6;
+  outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-page {
+    padding: var(--spacing-md);
+  }
+
+  .page-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .about-page section {
+    padding: var(--spacing-sm);
+  }
+
+  .about-page h2 {
+    font-size: 1.35rem;
+  }
+
+  .about-page h3 {
+    font-size: 1.15rem;
+  }
+
+  .page-navigation {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-page {
+    padding: var(--spacing-sm);
+  }
+
+  .page-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .about-page ul {
+    margin-left: var(--spacing-sm);
+  }
+}
